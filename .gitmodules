@@ -1,0 +1,20 @@
+[submodule "stdatalog_core"]
+	path = stdatalog_core
+	url = https://github.com/STMicroelectronics/stdatalog_core.git
+	branch = main
+[submodule "stdatalog_dtk"]
+	path = stdatalog_dtk
+	url = https://github.com/STMicroelectronics/stdatalog_dtk.git
+	branch = main
+[submodule "stdatalog_examples"]
+	path = stdatalog_examples
+	url = https://github.com/STMicroelectronics/stdatalog_examples.git
+	branch = main
+[submodule "stdatalog_gui"]
+	path = stdatalog_gui
+	url = https://github.com/STMicroelectronics/stdatalog_gui.git
+	branch = main
+[submodule "stdatalog_pnpl"]
+	path = stdatalog_pnpl
+	url = https://github.com/STMicroelectronics/stdatalog_pnpl.git
+	branch = main
