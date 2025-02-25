@@ -2,10 +2,15 @@
 
 ![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/stdatalog-pysdk.svg?color=brightgreen)
 
+> [!IMPORTANT]
+> This repository has been created using the `git submodule` command. Please refer to the ["How to use"](README.md#how-to-use) section for more details.
+
 The **[STDATALOG_PYSDK](https://github.com/STMicroelectronics/stdatalog-pysdk)** is a comprehensive Python framework designed to
 facilitate the capture, processing, and visualization of data from a wide range of
 sources, including sensors, algorithms, simulated signals, and telemetries from
 actuators.
+
+It is compatible with data, firmwares, devices and boards supported by **[FP-SNS-DATALOG2](https://github.com/STMicroelectronics/fp-sns-datalog2)** and **[FP-IND-DATALOGMC](https://github.com/STMicroelectronics/fp-ind-datalogmc)**.
 
 This software development kit is designed with an open and modular architecture,
 making it an excellent resource for data scientists and embedded designers.
@@ -53,7 +58,14 @@ git clone --recursive  --depth 1 --branch vX.Y.Z https://github.com/STMicroelect
 
 > [!NOTE]
 > * Option `--depth 1` specified in instruction (3) above is **not** mandatory. It may be useful to skip downloading all previous commits up to the one corresponding to the targeted version.
-> * If GitHub "Download ZIP" option is used instead of the `git clone` command, then the different submodules have to be collected and added **manually**.
+> * We strongly suggest to download the package by using `git` commands as described above. If GitHub "Download ZIP" option is used instead of the `git clone` command, then the five submodules listed below have to be downloaded **manually**. Then, unzip them and copy the contents into the corresponding empty folders.
+>   * [stdatalog_core](https://github.com/STMicroelectronics/stdatalog_core/archive/refs/heads/main.zip)
+>   * [stdatalog_dtk](https://github.com/STMicroelectronics/stdatalog_dtk/archive/refs/heads/main.zip)
+>   * [stdatalog_examples](https://github.com/STMicroelectronics/stdatalog_examples/archive/refs/heads/main.zip)
+>   * [stdatalog_gui](https://github.com/STMicroelectronics/stdatalog_gui/archive/refs/heads/main.zip)
+>   * [stdatalog_pnpl](https://github.com/STMicroelectronics/stdatalog_pnpl/archive/refs/heads/main.zip)
+>   
+>   ![manual_download](_htmresc/manual_download.png)
 
 ## How to install STDATALOG-PYSDK 
 
@@ -145,7 +157,8 @@ python3 gui_applications/stdatalog/GUI/stdatalog_GUI.py
 
 ## Supported Devices and Boards
 
-- All devices and boards supported by FP-SNS-DATALOG1, FP-SNS-DATALOG2 and FP-IND-DATALOGMC
+- All firmwares, devices and boards supported by **[FP-SNS-DATALOG2](https://github.com/STMicroelectronics/fp-sns-datalog2)** and **[FP-IND-DATALOGMC](https://github.com/STMicroelectronics/fp-ind-datalogmc)** function packs.
+- Retrocompatibility with FP-SNS-DATALOG1 (no GUI support available) 
 - [STEVAL-STWINBX1](https://www.st.com/stwinbox)
 - [STEVAL-STWINKT1B](https://www.st.com/stwin)
 - [STEVAL-MKBOXPRO](https://www.st.com/sensortileboxpro)
