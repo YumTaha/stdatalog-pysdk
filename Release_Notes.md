@@ -42,7 +42,35 @@ It is formerly known as **HSDPython_SDK**, previously distributed in **FP-SNS-DA
 # Update History
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section1" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<label for="collapse-section2" aria-hidden="true">v1.1.0 / 9-Apr-25</label>
+<div>
+
+
+## Main Changes
+
+### Maintenance Release
+
+- **Added macos support.**
+- stdatalog_core:
+	- Updated libhs_datalog_v2 libraries for all the supported OS.
+		- Updated libusb linking and added missing lirbary import for UNIX.
+		- Added a new logging system to manage application messages with different levels (NONE, ERROR, WARNING, INFO, DEBUG).
+		- Updated cmake_minimum_required version used to recompile libraries.
+		- Added new hs_datalog_load_ucf_file_to_mlc API (deprecated old hs_datalog_load_ucf_to_mlc API).
+- stdatalog_gui:
+	- Optimized TagsInfoWidget creation function.
+	- Fixed SpinBoxes arrows icons + QFrame unwanted borders + CommandWidget button name
+- Added support for Vanilla and serial datalogger.
+- Use the latest PySide6 version compatible w.r.t. architecture (Windows, Linux, macOS; 32bit, 64bit).
+- Upgraded package dependencies and versions.
+
+
+</div>
+:::
+
+::: {.collapse}
+<input type="checkbox" id="collapse-section1" aria-hidden="true">
 <label for="collapse-section1" aria-hidden="true">v1.0.0 / 17-Jan-25</label>
 <div>
 
