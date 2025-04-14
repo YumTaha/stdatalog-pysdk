@@ -96,7 +96,7 @@ If you are behind a proxy server, you must specify it in the command, if you hav
 When the installation is completed you can try one of the example scripts.
 ```sh
 cd stdatalog_examples
-python.exe gui_applications/stdatalog/GUI/stdatalog_GUI.py
+python gui_applications/stdatalog/GUI/stdatalog_GUI.py
 ```
 
 ### On Linux
@@ -172,7 +172,7 @@ If you are behind a proxy server, you must specify it in the command, if you hav
 When the installation is completed you can try one of the example scripts.
 ```sh
 cd stdatalog_examples
-python.exe gui_applications/stdatalog/GUI/stdatalog_GUI.py
+python3 gui_applications/stdatalog/GUI/stdatalog_GUI.py
 ```
 
 ## Known Limitations
