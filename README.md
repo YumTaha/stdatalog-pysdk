@@ -79,28 +79,34 @@ conflicts between different package versions, and making it easier to reproduce 
 
 Open a terminal from STDATALOG-PYSDK folder and activate the virtual environment.
 ```sh
+python -m venv .venv
 .\.venv\Scripts\activate
 ```
+
 Launch the installer, the script will install the SDK with the required dependencies.
 ```sh
 .\STDATALOG-PYSDK_install.bat
 ```
+
 If you are behind a proxy server, you must specify it in the command, if you have special characters in your password, you will have to replace them with their corresponding hex representation. E.g., '&' --> %26.
 ```sh
 .\STDATALOG-PYSDK_install.bat http://usr_name:password@proxyserver_name:port
 ```
+
 When the installation is completed you can try one of the example scripts.
 ```sh
 cd stdatalog_examples
 python.exe gui_applications/stdatalog/GUI/stdatalog_GUI.py
 ```
 
-### On Linux/macOS
+### On Linux
 
 Open a terminal from STDATALOG-PYSDK folder and activate the virtual environment.
 ```sh
-./.venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
+
 - The SDK has been built in a Windows environment. To avoid any possible issues while executing the script in a Linux environment, we suggest you use dos2unix to reformat the files properly.
 ```sh
 sudo apt-get install dos2unix
@@ -132,6 +138,41 @@ Open a terminal from STDATALOG-PYSDK folder and try one of the example scripts.
 ./.venv/bin/activate
 cd stdatalog_examples
 python3 gui_applications/stdatalog/GUI/stdatalog_GUI.py
+```
+
+### On macOS
+
+To run properly STDATALOG-PYSDK on macOS, Homebrew is required.
+You must install it before moving on with the next steps.
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+ 
+Open a terminal from STDATALOG-PYSDK folder and activate the virtual environment.
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+```
+- The SDK has been built in a Windows environment. To avoid any possible issues while executing the script in a Linux environment, we suggest you use dos2unix to reformat the files properly.
+```sh
+brew install dos2unix
+dos2unix STDATALOG-PYSDK_install.sh STDATALOG-PYSDK_install_noGUI.sh STDATALOG-PYSDK_uninstall.sh
+chmod +x STDATALOG-PYSDK_install.sh STDATALOG-PYSDK_install_noGUI.sh STDATALOG-PYSDK_uninstall.sh
+```
+
+Launch the installer, the script will install the SDK with the required dependencies.
+```sh
+./STDATALOG-PYSDK_install.sh
+```
+If you are behind a proxy server, you must specify it in the command, if you have special characters in your password, you will have to replace them with their corresponding hex representation. E.g., '&' --> %26.
+```sh
+./STDATALOG-PYSDK_install.sh http://usr_name:password@proxyserver_name:port
+```
+
+When the installation is completed you can try one of the example scripts.
+```sh
+cd stdatalog_examples
+python.exe gui_applications/stdatalog/GUI/stdatalog_GUI.py
 ```
 
 ## Known Limitations
