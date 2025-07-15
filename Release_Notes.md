@@ -24,7 +24,7 @@ actuators.
 
 This software development kit is designed with an open and modular architecture,
 making it an excellent resource for data scientists and embedded designers.
-**STDATALOG-PYSDK** has been developed in **Python 3.12**, but it is compatible also with Python 3.11 and 3.10.
+**STDATALOG-PYSDK** has been developed in **Python 3.13**, but it is compatible also with Python 3.12, 3.11 and 3.10.
 
 It provides a range of tools and utilities designed to simplify the development of
 applications that use data from ST system solutions.
@@ -42,7 +42,30 @@ It is formerly known as **HSDPython_SDK**, previously distributed in **FP-SNS-DA
 # Update History
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section3" checked aria-hidden="true">
+<label for="collapse-section3" aria-hidden="true">v1.2.0 / 20-Jun-25</label>
+<div>
+
+
+## Main Changes
+
+### Maintenance Release
+
+- Added support to Python 3.13
+- Redesigned USB catalog management: local catalog automatically synched with the online catalog
+- Removed dependency from matplotlib: use Parquet + Plotly (wResampler) + Dash as default for HSDatalog_v2 plots
+- Updated type_conversion, managing float_t, double_t, int_24_t, uint24_t
+- Updated ACTUATOR components and properties management
+- Integration of new staiotcraft_sdk library version
+- Bug fixing and code cleaning
+- Refer to each package Release_Notes for the detailed changelog
+
+
+</div>
+:::
+
+::: {.collapse}
+<input type="checkbox" id="collapse-section2" aria-hidden="true">
 <label for="collapse-section2" aria-hidden="true">v1.1.0 / 9-Apr-25</label>
 <div>
 

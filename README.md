@@ -9,7 +9,7 @@ actuators.
 
 This software development kit is designed with an open and modular architecture,
 making it an excellent resource for data scientists and embedded designers.
-**STDATALOG-PYSDK** has been developed in **Python 3.12**, but it is also compatible with Python 3.11 and 3.10.
+**STDATALOG-PYSDK** has been developed in **Python 3.13**, but it is also compatible with Python 3.12, 3.11 and 3.10.
 
 It provides a range of tools and utilities designed to simplify the development of
 applications that use data from ST system solutions.
@@ -58,7 +58,7 @@ git clone --recursive  --depth 1 --branch vX.Y.Z https://github.com/STMicroelect
 ## How to install STDATALOG-PYSDK 
 
 The STDATALOG-PYSDK provides installer scripts that can be used to properly install the SDK and all the required dependencies.
-STDATALOG-PYSDK has been developed in Python 3.12, but it is compatible also with Python 3.11 and 3.10.
+STDATALOG-PYSDK has been developed in Python 3.13, but it is compatible also with Python 3.12, 3.11 and 3.10.
 To properly use it, Python must be already installed on the machine before proceeding with the following procedure.
 
 It is recommended to use a clean virtual environment for configuration. Navigate to the STDATALOG-PYSDK root directory, open a 
@@ -183,7 +183,7 @@ python3 gui_applications/stdatalog/GUI/stdatalog_GUI.py
 ## Development Toolchains and Compilers
 
 - Compatible with Windows, Linux and macOS machines
-- Python 3.12, 3.11, 3.10
+- Python 3.13, 3.12, 3.11, 3.10
 
 ## Supported Devices and Boards
 
@@ -195,9 +195,12 @@ python3 gui_applications/stdatalog/GUI/stdatalog_GUI.py
 - [STEVAL-C34KAT1](https://www.st.com/en/evaluation-tools/steval-c34kat1.html)
 - [STEVAL-C34KAT2](https://www.st.com/en/evaluation-tools/steval-c34kat2.html)
 - [STEVAL-C34KPM1](https://www.st.com/en/evaluation-tools/steval-c34kpm1.html)
+- [STEVAL-AFCI1](https://www.st.com/en/evaluation-tools/steval-afci1.html)
 - [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html)
 - [X-NUCLEO-IKS02A1](https://www.st.com/en/ecosystems/x-nucleo-iks02a1.html) with [NUCLEO-U575ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html)
+- [X-NUCLEO-IKS4A1](https://www.st.com/en/ecosystems/x-nucleo-iks4a1.html) with [NUCLEO-U575ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html)
 - [X-NUCLEO-IKS02A1](https://www.st.com/en/ecosystems/x-nucleo-iks02a1.html) with [NUCLEO-H7A3ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-h7a3zi-q.html)
+- [X-NUCLEO-IKS4A1](https://www.st.com/en/ecosystems/x-nucleo-iks4a1.html) with [NUCLEO-H7A3ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-h7a3zi-q.html)
 - [EVLSPIN32G4-ACT](https://www.st.com/en/evaluation-tools/evlspin32g4-act.html)
 
 ## Backward Compatibility

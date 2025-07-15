@@ -15,10 +15,10 @@ elif [[ "$(uname -m)" == "aarch64" ]]; then
 	./configure || { echo "Failed to configure libusb"; exit 1; }
 	sudo make install -j 4 || { echo "Failed to install libusb"; exit 1; }
 	sudo ldconfig
-	if [[ "$(getconf LONG_BIT)" == "32" ]]; then		
+	if [[ "$(getconf LONG_BIT)" == "32" ]]; then
 		sudo cp ../stdatalog_core/stdatalog_core/HSD_link/communication/libhs_datalog/raspberryPi4_32bit/libhs_datalog_v1.so /usr/lib
 		sudo cp ../stdatalog_core/stdatalog_core/HSD_link/communication/libhs_datalog/raspberryPi4_32bit/libhs_datalog_v2.so /usr/lib
-	else		
+	else
 		sudo cp ../stdatalog_core/stdatalog_core/HSD_link/communication/libhs_datalog/raspberryPi4_64bit/libhs_datalog_v1.so /usr/lib
 		sudo cp ../stdatalog_core/stdatalog_core/HSD_link/communication/libhs_datalog/raspberryPi4_64bit/libhs_datalog_v2.so /usr/lib
 	fi
