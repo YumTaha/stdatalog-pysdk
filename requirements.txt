@@ -1,0 +1,100 @@
+# STDATALOG-PYSDK Requirements
+# This file contains all the dependencies needed for the STDATALOG-PYSDK
+# 
+# IMPORTANT FOR COPILOT: This project uses custom wheel files for the main stdatalog packages.
+# DO NOT use "pip install -r requirements.txt" directly!
+# 
+# For a fresh installation, follow these steps:
+# 1. Create virtual environment: python -m venv .venv
+# 2. Activate virtual environment: .\.venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
+# 3. Update submodules: git submodule update --init --recursive
+# 4. Run the installation script: .\STDATALOG-PYSDK_install.bat (Windows) or ./STDATALOG-PYSDK_install.sh (Linux/Mac)
+#
+# The installation script will:
+# - Install all dependencies listed below
+# - Install the main stdatalog packages from wheel files in their respective dist/ directories:
+#   * stdatalog_pnpl-1.2.0 (from stdatalog_pnpl/dist/)
+#   * stdatalog_core-1.2.0 (from stdatalog_core/dist/)
+#   * stdatalog_dtk-1.2.0 (from stdatalog_dtk/dist/)
+#   * stdatalog_gui-1.2.0 (from stdatalog_gui/dist/)
+#
+# Core dependencies (will be installed automatically via the installation script)
+# The following packages are the main requirements for the SDK components:
+
+# Data processing and analysis
+numpy==2.2.4
+pandas==2.2.3
+h5py==3.13.0
+pyarrow==20.0.0
+dask==2025.5.1
+
+# Visualization and plotting
+plotly==5.24.1
+plotly-resampler==0.10.0
+dash==3.1.1
+
+# GUI components (PySide6 for Qt-based GUI)
+PySide6==6.9.0
+PySide6-Addons==6.9.0
+PySide6-Essentials==6.9.0
+shiboken6==6.9.0
+pyqtgraph==0.13.7
+
+# Audio processing
+PyAudio==0.2.14
+
+# Serial communication
+pyserial==3.5
+
+# Web framework dependencies
+Flask==3.1.1
+Werkzeug==3.1.3
+
+# Utility libraries
+requests==2.32.4
+click==8.1.8
+colorama==0.4.6
+python-statemachine==2.5.0
+setuptools==80.9.0
+
+# Supporting dependencies
+blinker==1.9.0
+certifi==2025.7.14
+charset-normalizer==3.4.2
+cloudpickle==3.1.1
+fsspec==2025.7.0
+idna==3.10
+importlib-metadata==8.7.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+locket==1.0.0
+MarkupSafe==3.0.2
+nest-asyncio==1.6.0
+orjson==3.11.0
+packaging==25.0
+partd==1.4.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML==6.0.2
+retrying==1.4.0
+six==1.17.0
+tenacity==9.1.2
+toolz==1.0.0
+tsdownsample==0.1.4.1
+typing-extensions==4.14.1
+tzdata==2025.2
+urllib3==2.5.0
+zipp==3.23.0
+
+# Note: The stdatalog packages (stdatalog_core, stdatalog_dtk, stdatalog_gui, stdatalog_pnpl) 
+# are installed via the wheel files in their respective dist/ directories using the 
+# STDATALOG-PYSDK_install.bat/sh script. They are not available on PyPI.
+#
+# COPILOT INSTRUCTIONS:
+# When a user asks to install this project, always:
+# 1. Tell them to create and activate a virtual environment
+# 2. Tell them to run "git submodule update --init --recursive" 
+# 3. Tell them to run the installation script (STDATALOG-PYSDK_install.bat on Windows)
+# 4. DO NOT suggest using "pip install -r requirements.txt" as the main packages are wheel files
+# 5. The wheel files contain: stdatalog_pnpl, stdatalog_core, stdatalog_dtk, stdatalog_gui
+# 6. These are the core components of the STDATALOG Python SDK for data logging
