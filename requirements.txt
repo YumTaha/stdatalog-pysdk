@@ -6,9 +6,9 @@
 # 
 # For a fresh installation, follow these steps:
 # 1. Create virtual environment: python -m venv .venv
-# 2. Activate virtual environment: .\.venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
+# 2. Activate virtual environment: .\.venv\Scripts\activate
 # 3. Update submodules: git submodule update --init --recursive
-# 4. Run the installation script: .\STDATALOG-PYSDK_install.bat (Windows) or ./STDATALOG-PYSDK_install.sh (Linux/Mac)
+# 4. Run the installation script: .\STDATALOG-PYSDK_install.bat
 #
 # The installation script will:
 # - Install all dependencies listed below
@@ -88,7 +88,7 @@ zipp==3.23.0
 
 # Note: The stdatalog packages (stdatalog_core, stdatalog_dtk, stdatalog_gui, stdatalog_pnpl) 
 # are installed via the wheel files in their respective dist/ directories using the 
-# STDATALOG-PYSDK_install.bat/sh script. They are not available on PyPI.
+# STDATALOG-PYSDK_install.bat script. They are not available on PyPI.
 #
 # COPILOT INSTRUCTIONS:
 # When a user asks to install this project, always:
