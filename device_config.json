@@ -151,7 +151,7 @@
                 },
                 {
                     "wifi_config": {
-                        "ssid": "",
+                        "ssid": "MKMGuest",
                         "ip": "0.0.0.0",
                         "ftp_username": "anonymous",
                         "c_type": 2
@@ -363,7 +363,7 @@
                             "id": 3,
                             "temp": {
                                 "enable": false,
-                                "unit": "°C",
+                                "unit": "Â°C",
                                 "format": "float_t",
                                 "elements": 54,
                                 "channels": 1,
