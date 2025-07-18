@@ -8,7 +8,18 @@
 # 1. Create virtual environment: python -m venv .venv
 # 2. Activate virtual environment: .\.venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
 # 3. Update submodules: git submodule update --init --recursive
-# 4. Run the installation script: .\STDATALOG-PYSDK_install.bat (Windows) or ./STDATALOG-PYSDK_install.sh (Linux/Mac)
+# 4. Run the installer
+    # No-GUI installation
+    # Windows: .\STDATALOG-PYSDK_install_noGUI.bat
+    # Linux/macOS: ./STDATALOG-PYSDK_install_noGUI.sh
+
+    # Full installation (with GUI)
+    # Windows: .\STDATALOG-PYSDK_install.bat
+    # Linux/macOS: ./STDATALOG-PYSDK_install.sh
+ 
+    # Uninstallation
+    # Windows: .\STDATALOG-PYSDK_uninstall.bat
+    # Linux/macOS: ./STDATALOG-PYSDK_uninstall.sh
 #
 # The installation script will:
 # - Install all dependencies listed below
@@ -98,3 +109,6 @@ zipp==3.23.0
 # 4. DO NOT suggest using "pip install -r requirements.txt" as the main packages are wheel files
 # 5. The wheel files contain: stdatalog_pnpl, stdatalog_core, stdatalog_dtk, stdatalog_gui
 # 6. These are the core components of the STDATALOG Python SDK for data logging
+
+# User Note:
+# Use .venv\Scripts\Activate.ps1 to activate the virtual environment on Windows.
